@@ -9,11 +9,7 @@ let htmlDataType = NSPasteboard.PasteboardType(rawValue: htmlDataTypeName)
 let textDataTypeName : String = "public.utf8-plain-text"
 let textDataType = NSPasteboard.PasteboardType(rawValue: textDataTypeName)
 
-var markdown : String = ""
-while let line = readLine() {
-    markdown += line
-    markdown += "\n"
-}
+let markdown = String(data: FileHandle.standardInput.readDataToEndOfFile(), encoding: .utf8) ?? ""
 
 // Convert markdown to HTML
 let down = Down(markdownString: markdown)
