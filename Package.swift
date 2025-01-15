@@ -5,10 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "mdclip",
+    dependencies: [
+        .package(url: "https://github.com/johnxnguyen/Down", from: "0.11.0")
+    ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .executableTarget(
-            name: "mdclip"),
+            name: "mdclip",
+            dependencies: [
+                .product(name: "Down", package: "Down")
+            ]),
     ]
 )
