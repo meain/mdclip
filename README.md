@@ -1,4 +1,4 @@
-# mdclip - Copy markdon as html to html clipboard
+# mdclip - Copy Markdown as html to html clipboard
 
 A command-line tool that converts Markdown to HTML and copies both formats to the clipboard.
 
