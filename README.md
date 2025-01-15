@@ -12,6 +12,17 @@ A command-line tool that converts Markdown to HTML and copies both formats to th
 
 ## Installation
 
+### Using Pre-built Binary
+
+1. Download the latest release from the [Releases page](https://github.com/yourusername/mdclip/releases)
+2. Extract the tar.gz file
+3. Move the binary to your PATH:
+   ```bash
+   mv mdclip /usr/local/bin/
+   ```
+
+### Development (Build from Source)
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/mdclip.git
@@ -33,7 +44,7 @@ A command-line tool that converts Markdown to HTML and copies both formats to th
 Pipe Markdown content to the program:
 
 ```bash
-echo "## Heading\n\n- List item" | mdclip
+echo "This *could* be `completely` **pointless**." | mdclip
 ```
 
 Or use with a file:
