@@ -44,7 +44,7 @@ A command-line tool that converts Markdown to HTML and copies both formats to th
 Pipe Markdown content to the program:
 
 ```bash
-echo "This *could* be `completely` **pointless**." | mdclip
+echo 'This *could* be `completely` **pointless** _tomorrow_.' | mdclip
 ```
 
 Or use with a file:
