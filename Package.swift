@@ -6,13 +6,13 @@ import PackageDescription
 let package = Package(
     name: "mdclip",
     dependencies: [
-        .package(url: "https://github.com/johnxnguyen/Down", from: "0.11.0")
+        .package(url: "https://github.com/KristopherGBaker/libcmark_gfm", from: "0.29.0")
     ],
     targets: [
         .executableTarget(
             name: "mdclip",
             dependencies: [
-                .product(name: "Down", package: "Down")
+                .product(name: "libcmark_gfm", package: "libcmark_gfm")
             ]),
     ]
 )
